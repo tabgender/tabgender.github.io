@@ -56,3 +56,24 @@ clearIcon.addEventListener("click", () => {
   searchBar.value = "";
   clearIcon.style.visibility = "hidden";
 })
+
+function dropInfo(){
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.oneclick = function(event){
+ if(!event.target.matches('.dropbtn')){
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for(var i = 0; i < dropdowns.length; i++){
+    var openDropdown = dropdowns[i];
+    if(openDropdown.classList.container('show')){
+      openDropdown.classList.remove('show');
+    }
+  }
+ }
+
+
+
+
+}
