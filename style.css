@@ -9,7 +9,8 @@ body {
   display:flex;
   justify-content: space-between;
   align-items:center;
-  
+
+
 
 }
  
@@ -21,6 +22,7 @@ body {
   display:inline-flex;
   align-items: center;
   justify-content: center;
+
 }
  
 tab {
@@ -33,11 +35,6 @@ gender {
   color: #F6AAB9;
 }
  
-#settings-icon {
-  width: 30px;
-  display: inline-block;
-}
- 
 #funds-raised {
   font-size: 2em;
   height:60px;
@@ -45,6 +42,7 @@ gender {
  
   display:inline-flex;
   align-items:center;
+
 }
  
 .wrapper {
