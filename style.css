@@ -159,3 +159,8 @@ gender {
 .settings-svg{
   pointer-events:none;
 }
+
+.circle{
+  position:absolute;
+  bottom:1px;
+}
