@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96c4cd73-dd9a-4379-ade2-1a87eeff57c3/ddtomp2-bd09ed36-2305-46b2-ae7b-40c6b0364a1f.png/v1/fill/w_1280,h_753,q_80,strp/trans_flag_to_landscape_by_commiematt_ddtomp2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzUzIiwicGF0aCI6IlwvZlwvOTZjNGNkNzMtZGQ5YS00Mzc5LWFkZTItMWE4N2VlZmY1N2MzXC9kZHRvbXAyLWJkMDllZDM2LTIzMDUtNDZiMi1hZTdiLTQwYzZiMDM2NGExZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VmRA2pnt3Q84t4TF_WnHxAui8AvsSvJ4LuaYcoO0Lhg");
   background-size: cover;
   font-family: "Fredoka One", cursive;
@@ -7,33 +6,18 @@ body {
 
 .flex-container{
   display: flex;
-  flex-wrap: nowrap;
+
   justify-content:space-between;
   align-items:flex-start;
- 
-
 }
 
-
-
-=======
-  background: url("resources/trans_flag.jpg");
-  background-size: cover;
-  font-family: "Fredoka One", cursive;
-
-}
-
->>>>>>> cbb067ce55c4229227211c704d380237e03c75a6
 #header {
   background: rgba(255, 255, 255, 0.83);
   width: 180px;
   height: 60px;
   border-radius: 15px 15px 15px 15px;
-<<<<<<< HEAD
   display: flex;
-=======
   display: inline-block;
->>>>>>> cbb067ce55c4229227211c704d380237e03c75a6
   align-items: center;
   justify-content: center;
 }
@@ -117,22 +101,14 @@ gender {
   right: 1px;
   margin-right: 15px;
   margin-bottom: 10px;
-<<<<<<< HEAD
-  ;
-=======
-
->>>>>>> cbb067ce55c4229227211c704d380237e03c75a6
 }
 
 .clock-time,
 .clock-ampm {
   font-family: "Concert One", cursive;
   font-size: 30px;
-<<<<<<< HEAD
   color: #819ce8b0;
-=======
   color: rgb(72, 23, 105);
->>>>>>> cbb067ce55c4229227211c704d380237e03c75a6
 }
 
 .clock-time {
@@ -141,7 +117,6 @@ gender {
 
 .wrapper form {
   width: 500px;
-<<<<<<< HEAD
 }
 
 
@@ -181,7 +156,4 @@ gender {
 #settings-svg{
   
     pointer-events: none;
-  
-=======
->>>>>>> cbb067ce55c4229227211c704d380237e03c75a6
 }
