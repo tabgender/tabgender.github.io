@@ -32,8 +32,22 @@
     <p>$123,456.78</p>
   </span>
  
-  <img id="settings-icon" src="resources/settings.svg"/>
- 
+ <div class = "dropdown">
+  <button onclick = "dropInfo()" class = "dropbtn">
+    <img onclick = "dropInfo()" width = 60px height = 60px src = "resources/three-dots.svg" class = "settings-svg">
+  </button>
+
+  <div id = "myDropdown" class = "dropdown-content">
+    <a href = "#">Hello</a>
+    <a href = "#">Hello</a>
+    <a href = "#">Hello</a>
+  </div>
+
+
+ </div>
+
+
+
   <div class="clock">
     <span class="clock-time"></span>
     <span class="clock-ampm"></span>

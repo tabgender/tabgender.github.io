@@ -111,3 +111,42 @@ gender {
 .wrapper form {
   width: 500px;
 }
+
+
+.dropdown{
+  display:inline-block;
+  position:relative;
+}
+
+.dropbtn{
+  background:rgba(255,255,255,0);
+  padding:16px;
+  width:60px;
+  height:60px;
+  cursor:pointer;
+  border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+}
+
+.dropdown-content a{
+  display:block;
+}
+
+.dropdown-content a:hover{
+  background-color:#ddd;
+}
+
+.show{
+  display:block;
+}
+
+.settings-svg{
+  pointer-events:none;
+}
