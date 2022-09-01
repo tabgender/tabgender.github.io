@@ -8,6 +8,9 @@ body {
 .flex-container {
   display:flex;
   justify-content: space-between;
+  align-items:center;
+  
+
 }
  
 #header {
@@ -15,7 +18,7 @@ body {
   width: 180px;
   height: 60px;
   border-radius: 15px 15px 15px 15px;
-  display: inline-flex;
+  display:inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -37,7 +40,11 @@ gender {
  
 #funds-raised {
   font-size: 2em;
-  display: inline-block;
+  height:60px;
+  display: inline-flex;
+ 
+  display:inline-flex;
+  align-items:center;
 }
  
 .wrapper {
