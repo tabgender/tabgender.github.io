@@ -1,5 +1,5 @@
 class DigitalClock {
-  
+
   constructor(element) {
     this.element = element;
   }
@@ -45,9 +45,9 @@ const clearIcon = document.querySelector(".clear-icon");
 const searchBar = document.querySelector(".search");
 
 searchBar.addEventListener("keyup", () => {
-  if(searchBar.value && clearIcon.style.visibility != "visible"){
+  if (searchBar.value && clearIcon.style.visibility != "visible") {
     clearIcon.style.visibility = "visible";
-  } else if(!searchBar.value) {
+  } else if (!searchBar.value) {
     clearIcon.style.visibility = "hidden";
   }
 });
