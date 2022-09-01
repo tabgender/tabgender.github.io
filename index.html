@@ -22,6 +22,9 @@
 
 <body>
 
+  <div class = flex-container>
+  <div id="header" style>
+
   <span id="header">
     <h1>
       <tab>tab</tab><gender>gender</gender>
@@ -31,6 +34,23 @@
   <span id="funds-raised">
     <p>$123,456.78</p>
   </span>
+
+  <div class = "dropdown" style="align-self: flex-end">
+
+    <button onclick = "dropInfo()" class = "dropbtn">
+      <img onclick = "dropInfo()" width = 60px height = 60px src = "resources/three-dots-vertical-svgrepo-com (2).svg" id = "settings-svg">
+    </button>
+  
+    <div id = "myDropdown" class = "dropdown-content">
+      <a href = "#">Hello</a>
+      <a href = "#">Hello</a>
+      <a href = "#">Hello</a>
+    </div>
+  
+   </div>
+
+   
+  </div>
 
   <img id="settings-icon" src="resources/settings.svg"/>
 
@@ -51,6 +71,9 @@
 
 
   </div>
+
+ 
+
   <script src="script.js"></script>
 </body>
 
