@@ -36,7 +36,10 @@ class DigitalClock {
 const clockElement = document.querySelector(".clock");
 const clockObject = new DigitalClock(clockElement);
 
+
 clockObject.start();
+
+
 
 const clearIcon = document.querySelector(".clear-icon");
 const searchBar = document.querySelector(".search");

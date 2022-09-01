@@ -80,7 +80,7 @@ gender {
 .clock-time, .clock-ampm {
   font-family: "Concert One", cursive;
   font-size: 30px;
-  color: var(--a-color)
+  color: red;
 }
 
 .clock-time {
