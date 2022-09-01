@@ -10,7 +10,7 @@ body {
   width: 180px;
   height: 60px;
   border-radius: 15px 15px 15px 15px;
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
