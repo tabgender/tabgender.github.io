@@ -1,16 +1,10 @@
 body {
-  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96c4cd73-dd9a-4379-ade2-1a87eeff57c3/ddtomp2-bd09ed36-2305-46b2-ae7b-40c6b0364a1f.png/v1/fill/w_1280,h_753,q_80,strp/trans_flag_to_landscape_by_commiematt_ddtomp2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzUzIiwicGF0aCI6IlwvZlwvOTZjNGNkNzMtZGQ5YS00Mzc5LWFkZTItMWE4N2VlZmY1N2MzXC9kZHRvbXAyLWJkMDllZDM2LTIzMDUtNDZiMi1hZTdiLTQwYzZiMDM2NGExZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VmRA2pnt3Q84t4TF_WnHxAui8AvsSvJ4LuaYcoO0Lhg");
+  background: url("resources/trans_flag.jpg");
   background-size: cover;
   font-family: "Fredoka One", cursive;
+ 
 }
-
-.flex-container{
-  display: flex;
-
-  justify-content:space-between;
-  align-items:flex-start;
-}
-
+ 
 #header {
   background: rgba(255, 255, 255, 0.83);
   width: 180px;
@@ -20,48 +14,48 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+ 
 tab {
-
+ 
   color: #5BCFFB;
 }
-
+ 
 gender {
-
+ 
   color: #F6AAB9;
 }
-
+ 
 #settings-icon {
   float:right;
   margin-top: -60px;
   width: 30px;
 }
-
+ 
 #funds-raised {
   font-size: 2em;
   display: inline-block;
 }
-
+ 
 .wrapper {
-
+ 
   margin-left: 450px;
   margin-right: 450px;
   margin-top: 250px;
-
+ 
   position: relative;
   display: flex;
   min-width: 100px;
   align-items: center;
 }
-
-
+ 
+ 
 .search-icon {
   position: absolute;
   top: 12px;
   left: 10px;
   width: 20px;
 }
-
+ 
 .clear-icon {
   position: absolute;
   top: 12px;
@@ -70,7 +64,7 @@ gender {
   cursor: pointer;
   visibility: hidden;
 }
-
+ 
 .search {
   border: 1px solid grey;
   border-radius: 20px;
@@ -82,77 +76,38 @@ gender {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
 }
-
+ 
 .search:hover,
 .search:focus {
   border: 1px solid #009688;
   background-color: white;
 }
-
+ 
 ::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
-
+ 
 .clock {
   position: absolute;
   bottom: 1px;
   right: 1px;
   margin-right: 15px;
   margin-bottom: 10px;
+ 
 }
-
+ 
 .clock-time,
 .clock-ampm {
   font-family: "Concert One", cursive;
   font-size: 30px;
-  color: #819ce8b0;
   color: rgb(72, 23, 105);
 }
-
+ 
 .clock-time {
   font-size: 48px;
 }
-
+ 
 .wrapper form {
   width: 500px;
-}
-
-
-
-
-.dropdown{
-  display:inline-block;
-  position:relative;
-
-}
-
-.dropbtn{
- background: rgba(255,255,255,0);
- padding:16px;
- width:60px;
- height:60px;
- cursor:pointer;
- border:none;
- display:flex;
- align-items:center;
- justify-content: center;
-}
-
-.dropdown-content{
-  display:none;
-  position:absolute;
-}
-
-.dropdown-content a{
-  display:block;
-}
-
-.dropdown-content a:hover {background-color: #ddd}
-
-.show {display:block;}
-
-#settings-svg{
-  
-    pointer-events: none;
 }
