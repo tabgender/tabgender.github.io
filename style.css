@@ -4,13 +4,18 @@ body {
   font-family: "Fredoka One", cursive;
  
 }
+
+.flex-container {
+  display:flex;
+  justify-content: space-between;
+}
  
 #header {
   background: rgba(255, 255, 255, 0.83);
   width: 180px;
   height: 60px;
   border-radius: 15px 15px 15px 15px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -26,9 +31,8 @@ gender {
 }
  
 #settings-icon {
-  float:right;
-  margin-top: -60px;
   width: 30px;
+  display: inline-block;
 }
  
 #funds-raised {
