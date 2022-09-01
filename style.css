@@ -10,7 +10,7 @@ body {
   width: 180px;
   height: 60px;
   border-radius: 15px 15px 15px 15px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
@@ -33,8 +33,7 @@ gender {
 
 #funds-raised {
   font-size: 2em;
-  display:inline-block;
-  
+  display: inline-block;
 }
 
 .wrapper {
