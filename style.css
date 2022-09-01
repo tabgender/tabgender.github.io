@@ -77,10 +77,18 @@ gender {
   font-size: 1em;
 }
 
+.clock{
+position:absolute;
+bottom:1px;
+right:1px;
+margin-right:15px;
+margin-bottom: 10px;;
+}
+
 .clock-time, .clock-ampm {
   font-family: "Concert One", cursive;
   font-size: 30px;
-  color: red;
+  color: #ddc9e9b0;
 }
 
 .clock-time {
