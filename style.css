@@ -1,5 +1,5 @@
 body {
-  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96c4cd73-dd9a-4379-ade2-1a87eeff57c3/ddtomp2-bd09ed36-2305-46b2-ae7b-40c6b0364a1f.png/v1/fill/w_1280,h_753,q_80,strp/trans_flag_to_landscape_by_commiematt_ddtomp2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzUzIiwicGF0aCI6IlwvZlwvOTZjNGNkNzMtZGQ5YS00Mzc5LWFkZTItMWE4N2VlZmY1N2MzXC9kZHRvbXAyLWJkMDllZDM2LTIzMDUtNDZiMi1hZTdiLTQwYzZiMDM2NGExZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VmRA2pnt3Q84t4TF_WnHxAui8AvsSvJ4LuaYcoO0Lhg");
+  background: url("resources/trans_flag.jpg");
   background-size: cover;
   font-family: "Fredoka One", cursive;
 
@@ -15,7 +15,6 @@ body {
   justify-content: center;
 }
 
-
 tab {
 
   color: #5BCFFB;
@@ -24,6 +23,18 @@ tab {
 gender {
 
   color: #F6AAB9;
+}
+
+#settings-icon {
+  float:right;
+  margin-top: -60px;
+  width: 30px;
+}
+
+#funds-raised {
+  font-size: 2em;
+  display:inline-block;
+  
 }
 
 .wrapper {
