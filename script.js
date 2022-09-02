@@ -23,9 +23,9 @@ class Clock {
     const d = new Date();
 
     if (d.getHours() > 12) {
-      this.time.textContent = (d.getHours()-12) + ":" + d.getMinutes() + " pm";
+      this.time.textContent = (d.getHours()-12) + ":" + (d.getMinutes() < 10? "0" + d.getMinutes(): d.getMinutes()) + " pm";
     } else {
-      this.time.textContent = d.getHours() + ":" + d.getMinutes() + " am";
+      this.time.textContent = d.getHours() + ":" + (d.getMinutes() < 10? "0" + d.getMinutes(): d.getMinutes()) + " am";
     }
   }
 
