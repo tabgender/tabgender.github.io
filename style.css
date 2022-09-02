@@ -1,23 +1,12 @@
 body {
-	margin: 0px;
-	padding: 0px;
-	font-family: "Arial";
-	overflow-x: hidden;
+
+	font-family: Inter, serif;
 	background: rgba(192, 149, 228, 1);
+	overflow-x: hidden;
+	overflow-y: hidden;
 
-	font-family: Inter;
-}
-
-img {
-	position: absolute;
-	display: block;
-	margin: 0px;
-	border: none;
-	padding: 0px;
-}
-
-div {
-	position: absolute;
+	width: 100vw;
+	height: 100vh;
 }
 
 input {
@@ -40,26 +29,29 @@ input {
 	background: rgba(252, 237, 242, 1);
 }
 
-#search_bar {
-	position: absolute;
+#search-wrapper {
+	width:100pw;
+	display:flex;
+	justify-content: center;
+}
 
-	top: 470px;
-	left: 306px;
-	width: 841px;
+#search_bar {
+	width: 840px;
 	height: 84px;
+
+	display:flex;
+	justify-content:center;
 
 	border-radius: 200px;
 	background: rgba(252, 237, 242, 1);
 }
 
 #search-form {
-	position:absolute;
-	left: 60px;
 
 	width: 730px;
 	height:82px;
 
-	border: none;
+	border: 10px solid red;
 
 	background:rgba(252, 237, 242, 1);
 	
@@ -74,28 +66,24 @@ input {
 }
 
 #google_icon {
-	top: 497px;
-	left: 327px;
 	width: 30px;
-	height: 29.41px;
+	height: 30px;
 }
 
 
 #time {
-	top: 315px;
-	left: 457px;
-	width: 651px;
-	height: 180px;
-	overflow: hidden;
 
-	font-size: 120px;
+	display:flex;
+	width:100vw;
+	justify-content: center;
+
+	font-size: 90px;
 	color: #FCEDF2;
 }
 
 
 #date {
-	top: 579px;
-	left: 549px;
+
 	width: 391.5px;
 	height: 92.5px;
 	overflow: hidden;
@@ -106,11 +94,10 @@ input {
 
 
 #funds_raised {
-	top: 26px;
-	left: 1136px;
-	width: 317px;
-	height: 67px;
-	overflow: hidden;
+
+	float: right;
+
+	margin-right:5px;
 
 	font-size: 40px;
 	text-align: left;
@@ -119,8 +106,12 @@ input {
 
 
 #options {
-	top: 33px;
-	left: 1385px;
+
+	float: right;
+
+	margin-top:9px;
+	margin-right:15px;
+
 	width: 30px;
-	height: 32px;
+	height: 30px;
 }
