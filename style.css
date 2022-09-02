@@ -20,7 +20,10 @@ div {
 	position: absolute;
 }
 
-
+input {
+	color:rgba(192, 149, 228, 1);
+	outline: none;
+}
 
 #pseudo_logo {
 	top: 40px;
@@ -50,18 +53,24 @@ div {
 }
 
 #search-form {
-
 	position:absolute;
 	left: 60px;
 
-	width: 700px;
+	width: 730px;
 	height:82px;
 
 	border: none;
 
 	background:rgba(252, 237, 242, 1);
+	
+	font-family: inter, serif;
 	font-size:45px;
-	text-decoration-color: rgba(192, 149, 228, 1);
+}
+
+::placeholder {
+	color:rgb(216, 177, 248);
+	font-family: inter, serif;
+	font-weight: 300;
 }
 
 #google_icon {
