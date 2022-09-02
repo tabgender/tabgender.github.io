@@ -4,6 +4,8 @@ body {
 	font-family: "Arial";
 	overflow-x: hidden;
 	background: rgba(192, 149, 228, 1);
+
+	font-family: Inter;
 }
 
 img {
@@ -27,8 +29,6 @@ div {
 	height: 130px;
 	background: rgba(255, 183, 197, 1);
 }
-
-
 #psuedo_logo {
 	top: 70px;
 	left: 70px;
@@ -39,16 +39,18 @@ div {
 
 
 #search_bar {
+	position: absolute;
+
 	top: 470px;
 	left: 306px;
 	width: 841px;
 	height: 84px;
-	-ms-border-radius: 200px;
-	-o-border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
+
 	border-radius: 200px;
 	background: rgba(252, 237, 242, 1);
+
+	font-size:45px;
+	
 }
 
 
@@ -58,7 +60,7 @@ div {
 	width: 616px;
 	height: 81px;
 	overflow: hidden;
-	font-family: Inter;
+
 	font-size: 40px;
 	text-align: left;
 	color: #C095E4;
@@ -79,9 +81,8 @@ div {
 	width: 651px;
 	height: 180px;
 	overflow: hidden;
-	font-family: Inter;
+
 	font-size: 120px;
-	text-align: left;
 	color: #FCEDF2;
 }
 
@@ -92,9 +93,8 @@ div {
 	width: 391.5px;
 	height: 92.5px;
 	overflow: hidden;
-	font-family: Inter;
+
 	font-size: 45px;
-	text-align: left;
 	color: #FCEDF2;
 }
 
@@ -105,7 +105,7 @@ div {
 	width: 317px;
 	height: 67px;
 	overflow: hidden;
-	font-family: Inter;
+
 	font-size: 40px;
 	text-align: left;
 	color: #FCEDF2;
