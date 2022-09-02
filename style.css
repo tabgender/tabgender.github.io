@@ -1,5 +1,5 @@
 body {
-  background: url("resources/trans_flag.jpg");
+  background: rgba(71,111,149,1);
   background-size: cover;
   font-family: "Fredoka One", cursive;
  
@@ -131,7 +131,7 @@ gender {
   background:rgba(255,255,255,0);
   padding:16px;
   width:60px;
-  height:60px;
+  height:40px;
   cursor:pointer;
   border:none;
   display:flex;
