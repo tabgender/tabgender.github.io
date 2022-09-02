@@ -1,39 +1,24 @@
 //time
-class Clock {
+var time = document.getElementById("time");
+var date = document.getElementById("date");
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var monthsOfYear = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
 
-  constructor(time, date) {
-    this.time = time;
-    this.date = date;
+function update(time, date) {
+  const d = new Date();
 
-    this.daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    this.monthsOfYear = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
+  if (d.getHours() > 12) {
+    time.textContent = (d.getHours() - 12) + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " pm";
+  } else {
+    time.textContent = d.getHours() + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " am";
   }
 
-  start() {
-
-    this.update();
-
-    setInterval(() => {
-      this.update();
-    }, 750);
-  }
-
-  update() {
-    const d = new Date();
-
-    if (d.getHours() > 12) {
-      this.time.textContent = (d.getHours() - 12) + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " pm";
-    } else {
-      this.time.textContent = d.getHours() + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " am";
-    }
-
-    this.date.textContent = daysOfWeek[d.getDay()] + ", " + monthsOfYear[d.getMonth()] + " " + d.getDate();
-  }
-
+  date.textContent = daysOfWeek[d.getDay()] + ", " + monthsOfYear[d.getMonth()] + " " + d.getDate();
 }
-console.log(document.getElementById("time"));
-const clock = new Clock(document.getElementById("time"), document.getElementById("date"));
-clock.start();
+
+update(time, date);
+
+setInterval(update, 750, time, date);
 
 function dropInfo() {
   document.getElementById("myDropdown").classList.toggle("show");
