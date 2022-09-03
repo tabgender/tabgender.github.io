@@ -2,6 +2,7 @@ body {
 
 	font-family: Inter, serif;
 	background: rgba(192, 149, 228, 1);
+	background: linear-gradient(to bottom right, rgb(211, 179, 236), rgb(80, 0, 145));
 	overflow-x: hidden;
 	overflow-y: hidden;
 
