@@ -112,14 +112,62 @@ input {
 	color: #FCEDF2;
 }
 
+#options:hover {
+	background: rgb(182, 74, 253);
+}
 
 #options {
+	float:right;
+	justify-content: center;
+	vertical-align:	center;
 
-	float: right;
+	display:flex;
 
-	margin-top: 9px;
+	border-radius:100%;
+
+	border: none;
+	background: rgba(155, 39, 233,0);
+
+	margin-top: 5px;
 	margin-right: 15px;
+
+	width:40px;
+	height:40px;
+}
+
+#options-icon {
+
+	margin-top:3px;
 
 	width: 30px;
 	height: 30px;
+
+	pointer-events:none;
+}
+
+#options-page {
+
+	display: flex;
+
+	position: absolute;
+
+	right: 0vw;
+
+	border-radius:10%;
+
+	margin-right: 18px;
+	margin-top: -8px;
+
+	width: 200px;
+	height: 300px;
+
+	background: rgba(252, 237, 242, 0.5);
+}
+
+#links {
+
+	margin-left: 20px;
+	margin-top: 15px;
+
+	font-size: 20px;
 }

@@ -20,19 +20,29 @@ update(time, date);
 
 setInterval(update, 750, time, date);
 
-function dropInfo() {
-  document.getElementById("myDropdown").classList.toggle("show");
+var optionsPage = document.getElementById("options-page");
+
+function toggleOptions() {
+  if(optionsPage.style.display==="none") {
+    openOptions();
+  } else {
+    closeOptions();
+  }
 }
 
-window.oneclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+function openOptions() {
+  console.log("a");
+  optionsPage.style.display = "flex";
+}
 
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.container('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+function closeOptions() {
+  optionsPage.style.display = "none";
+}
+
+
+closeOptions();
+window.onclick = function (event) {
+  if (!event.target.matches("#options")) {
+    closeOptions();
   }
 }
