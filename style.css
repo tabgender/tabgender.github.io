@@ -82,6 +82,8 @@ input {
 
 
 #time {
+	cursor: default;
+
 	display: flex;
 	width: 100vw;
 	justify-content: center;
@@ -92,6 +94,8 @@ input {
 
 
 #date {
+	cursor: default;
+
 	display: flex;
 
 	justify-content: center;
@@ -102,7 +106,8 @@ input {
 
 
 #funds-raised {
-
+	cursor: default;
+	
 	float: right;
 
 	margin-right: 5px;
