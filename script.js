@@ -17,9 +17,9 @@ function update(time, date) {
 }
 
 update(time, date);
-
 setInterval(update, 750, time, date);
 
+//options
 var optionsPage = document.getElementById("options-page");
 
 function toggleOptions() {
@@ -31,14 +31,12 @@ function toggleOptions() {
 }
 
 function openOptions() {
-  console.log("a");
   optionsPage.style.display = "flex";
 }
 
 function closeOptions() {
   optionsPage.style.display = "none";
 }
-
 
 closeOptions();
 window.onclick = function (event) {
