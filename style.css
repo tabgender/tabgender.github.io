@@ -40,7 +40,7 @@ input {
 	vertical-align: center;
 }
 
-#search_bar {
+#search-bar {
 	width: 845px;
 	height: 84px;
 
@@ -70,7 +70,7 @@ input {
 	font-weight: 300;
 }
 
-#google_icon {
+#google-icon {
 
 	margin-left: -30px;
 	margin-top: 25px;
@@ -100,7 +100,7 @@ input {
 }
 
 
-#funds_raised {
+#funds-raised {
 
 	float: right;
 
