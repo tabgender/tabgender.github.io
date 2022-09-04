@@ -289,29 +289,35 @@ input {
 }
 
 #color-selector {
-
 	grid-row: 2;
 	grid-column:2;
 
 	background: rgb(197, 197, 197);
 	border-radius:20px;
 
-	width: 100fr;
-	height: 100fr;
+	display:flex;
 }
 
-#theme-selector-spacer {
+.color-option {
+	width: 5em;
+	height: 5em;
+}
 
-	visibility: hidden;
-
-	grid-row:1;
-	grid-column:1;
-
-	height:100fr;
-	width: 100fr;
-
-	background: rgb(197, 197, 197);
-	border-radius:10px;
-
-	pointer-events: none;
+#red-color-option {
+	background: red;
+}
+#orange-color-option {
+	background: orange;
+}
+#yellow-color-option {
+	background: yellow;
+}
+#green-color-option {
+	background: green;
+}
+#blue-color-option {
+	background: blue;
+}
+#purple-color-option {
+	background: purple;
 }

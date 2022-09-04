@@ -77,8 +77,7 @@ window.onclick = function (event) {
     }
   }
 
-  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector") && !event.target.matches("#theme-selector-categories") && !event.target.matches("#color-selector") && !event.target.matches(".theme-selector-category")) {
+  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector") && !event.target.matches("#theme-selector-categories") && !event.target.matches("#color-selector") && !event.target.matches(".theme-selector-category") && !event.target.matches(".color-option")) {
     closeThemeSelector();
-    console.log(event.target.id);
   }
 }
