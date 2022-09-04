@@ -55,13 +55,17 @@ function openThemeSelector() {
     () => { timer--; if (timer <= 0) { clearInterval(x) } },
     10
   );
-
-
 }
 
 function closeThemeSelector() {
   themeSelectorWrapper.style.backdropFilter = "none";
   themeSelector.style.visibility = "hidden";
+}
+
+//choose what category of theme selector to engage
+function selectThisThemeCategory(category) {
+  document.getElementById("selected-theme-category").removeAttribute("id");
+  category.setAttribute("id", "selected-theme-category");
 }
 
 //mouse handling
@@ -73,7 +77,8 @@ window.onclick = function (event) {
     }
   }
 
-  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector") && !event.target.matches("theme-selector-categories")) {
+  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector") && !event.target.matches("#theme-selector-categories") && !event.target.matches("#color-selector") && !event.target.matches(".theme-selector-category")) {
     closeThemeSelector();
+    console.log(event.target.id);
   }
 }

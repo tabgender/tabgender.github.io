@@ -58,12 +58,25 @@
     <div id="theme-selector-wrapper">
       <div id="theme-selector">
 
+        <div id="theme-selector-spacer"></div>
+
+        <div id="theme-selector-header">Customize this page</div>
+
         <div id="theme-selector-categories">
-          <p class="theme-selector-category">Color</p>
-          <p class="theme-selector-category">Style</p>
+          <button class="theme-selector-category" id="selected-theme-category" onclick="selectThisThemeCategory(this)">
+            Color
+          </button>
+          <button class="theme-selector-category" onclick = "selectThisThemeCategory(this)">
+            Style
+          </button>
         </div>
-      
-        <div id="theme-selector-header">Customize your page</div>
+
+
+        <div id="color-selector">
+
+
+        </div>
+        <div id="style-selector"></div>
 
       </div>
     </div>
