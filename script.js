@@ -45,7 +45,7 @@ var timer = 10;
 themeSelector.style.visibility = "hidden";
 
 function openThemeSelector() {
-  themeSelectorWrapper.style.backdropFilter = "blur(2px)";
+  themeSelectorWrapper.style.backdropFilter = "brightness(30%)";
   themeSelector.style.visibility = "visible";
   timer = 10;
 
@@ -71,7 +71,7 @@ window.onclick = function (event) {
     }
   }
 
-  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector")) {
+  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector") && !event.target.matches("theme-selector-categories")) {
     closeThemeSelector();
   }
 }

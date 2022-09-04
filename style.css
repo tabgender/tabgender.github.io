@@ -1,8 +1,18 @@
-body {
+:root {
+	--bg-color-top-left: rgb(211, 179, 236);
+	--bg-color-bottom-right: rgb(80, 0, 145);
 
+	--dark-color-0: rgb(78, 9, 124);
+	--dark-color-1: rgb(182, 74, 253);
+	--dark-color-2: rgb(192, 149, 228);
+	--dark-color-3: rgb(216, 177, 248);
+
+	--light-color: rgba(252, 237, 242, 1);
+}
+
+body {
 	font-family: Inter, serif;
-	background: rgba(192, 149, 228, 1);
-	background: linear-gradient(to bottom right, rgb(211, 179, 236), rgb(80, 0, 145));
+	background: linear-gradient(to bottom right, var(--bg-color-top-left), var(--bg-color-bottom-right));
 	overflow-x: hidden;
 	overflow-y: hidden;
 
@@ -14,28 +24,12 @@ body {
 }
 
 input {
-	color: rgba(192, 149, 228, 1);
+	color: var(--dark-color-2);
 	outline: none;
 }
 
-#pseudo_logo {
-	top: 40px;
-	left: 40px;
-	width: 130px;
-	height: 130px;
-	background: rgba(255, 183, 197, 1);
-}
-
-#psuedo_logo {
-	top: 70px;
-	left: 70px;
-	width: 130px;
-	height: 130px;
-	background: rgba(252, 237, 242, 1);
-}
-
 #search-wrapper {
-	width: 100pw;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	vertical-align: center;
@@ -49,7 +43,7 @@ input {
 	justify-content: center;
 
 	border-radius: 200px;
-	background: rgba(252, 237, 242, 1);
+	background: var(--light-color);
 }
 
 #search-form {
@@ -59,20 +53,19 @@ input {
 	height: 82px;
 
 	border: none;
-	background: rgba(252, 237, 242, 1);
+	background: var(--light-color);
 
 	font-family: inter, serif;
 	font-size: 45px;
 }
 
 ::placeholder {
-	color: rgb(216, 177, 248);
+	color: var(--dark-color-3);
 	font-family: inter, serif;
 	font-weight: 300;
 }
 
 #google-icon {
-
 	margin-left: -30px;
 	margin-top: 28px;
 
@@ -89,7 +82,7 @@ input {
 	justify-content: center;
 
 	font-size: 90px;
-	color: #FCEDF2;
+	color: var(--light-color);
 }
 
 
@@ -101,7 +94,7 @@ input {
 	justify-content: center;
 
 	font-size: 45px;
-	color: #FCEDF2;
+	color: var(--light-color);
 }
 
 
@@ -114,7 +107,7 @@ input {
 
 	font-size: 40px;
 	text-align: left;
-	color: #FCEDF2;
+	color: var(--light-color);
 }
 
 .options-button {
@@ -126,7 +119,7 @@ input {
 
 	border-radius: 100%;
 	border: none;
-	background: rgba(155, 39, 233, 0);
+	background: none;
 
 	margin-top: 5px;
 	margin-right: 15px;
@@ -136,11 +129,11 @@ input {
 }
 
 .options-button:hover {
-	background: rgb(182, 74, 253);
+	background: var(--dark-color-1);
 }
 
 #options-button-pressed {
-	background: rgb(182, 74, 253);
+	background: var(--dark-color-1);
 }
 
 #options-icon {
@@ -166,7 +159,7 @@ input {
 	width: 90px;
 	height: 85px;
 
-	background: rgba(252, 237, 242, 0.5);
+	background: rgba(255, 255, 255, 0.5);
 }
 
 #link-wrapper {
@@ -184,7 +177,7 @@ input {
 .link {
 	text-decoration: none;
 
-	color: rgb(78, 9, 124);
+	color: var(--dark-color-0);
 
 	width: 80px;
 	margin: 0px;
@@ -192,7 +185,7 @@ input {
 }
 
 .link:hover {
-	background: rgba(252, 237, 242, 0.5);
+	background: rgba(255, 255, 255, 0.5);
 }
 
 #theme-selector-wrapper {
@@ -205,11 +198,10 @@ input {
 
 	display: flex;
 	justify-content: center;
-	
-	padding-top: 20vh;
+	align-items:center;
 
-	top:0px;
-	left:0px;
+	top: 0px;
+	left: 0px;
 }
 
 #theme-selector {
@@ -217,12 +209,44 @@ input {
 	visibility: visible;
 	pointer-events: all;
 
-	width: 400px;
+	width: 500px;
 	height: 400px;
 	border-radius: 20px;
 
-	background: rgba(255,255,255,0.8);
+	background: rgba(255, 255, 255, 0.9);
+
+	padding: 30px 10px 30px 10px;
 
 	display: flex;
-	justify-content: center;
+}
+
+#theme-selector-header {
+	pointer-events: none;
+	font-size: 20px;
+
+	align-self: flex-start;
+
+	margin: 10px 10px 10px 0px;
+}
+
+#theme-selector-categories {
+
+	pointer-events: none;
+
+	font-size: 20px;
+	height: 400px;
+
+	align-self:flex-start;
+
+	display:flex;
+	flex-direction: column;
+
+	margin: 60px 10px 10px 10px;
+	padding-top: 0px;
+}
+
+.theme-selector-category {
+	pointer-events: none;
+
+	margin: 0px 10px 30px 10px;
 }
