@@ -21,26 +21,57 @@ setInterval(update, 750, time, date);
 
 //options
 var optionsPage = document.getElementById("options-page");
+var options = document.getElementsByClassName("options-button")[0];
 
 function toggleOptions() {
-  if(optionsPage.style.display==="none") {
-    openOptions();
+  if (optionsPage.style.display === "none") {
+    optionsPage.style.display = "flex";
+    options.setAttribute("id", "options-button-pressed");
   } else {
-    closeOptions();
+    optionsPage.style.display = "none";
+    if (options.hasAttribute("id")) {
+      options.removeAttribute("id");
+    }
   }
 }
 
-function openOptions() {
-  optionsPage.style.display = "flex";
+optionsPage.style.display = "none";
+
+//theme-selector
+var themeSelector = document.getElementById("theme-selector");
+var themeSelectorWrapper = document.getElementById("theme-selector-wrapper");
+var timer = 10;
+
+themeSelector.style.visibility = "hidden";
+
+function openThemeSelector() {
+  themeSelectorWrapper.style.backdropFilter = "blur(2px)";
+  themeSelector.style.visibility = "visible";
+  timer = 10;
+
+  var x = setInterval(
+    () => { timer--; if (timer <= 0) { clearInterval(x) } },
+    10
+  );
+
+
 }
 
-function closeOptions() {
-  optionsPage.style.display = "none";
+function closeThemeSelector() {
+  themeSelectorWrapper.style.backdropFilter = "none";
+  themeSelector.style.visibility = "hidden";
 }
 
-closeOptions();
+//mouse handling
 window.onclick = function (event) {
-  if (!event.target.matches("#options")) {
-    closeOptions();
+  if (!event.target.matches(".options-button")) {
+    optionsPage.style.display = "none";
+    if (options.hasAttribute("id")) {
+      options.removeAttribute("id");
+    }
+  }
+
+  if (timer <= 0 && themeSelector.style.visibility === "visible" && !event.target.matches("#theme-selector")) {
+    closeThemeSelector();
   }
 }

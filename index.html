@@ -16,16 +16,12 @@
 
 <body>
 
-  <simply-live>
+  <live-simply>
     <br />
 
-    <!--<div id="pseudo_logo"></div>
-  <div id="psuedo_logo"></div>-->
-
-    <button id="options" onclick="toggleOptions()">
+    <button class="options-button" onclick="toggleOptions()">
       <img src="resources/options-pink.png" id="options-icon" />
     </button>
-
 
     <div id="funds-raised">$123,456.78</div>
 
@@ -34,7 +30,7 @@
       <br />
       <div id="link-wrapper">
         <a class="link" href="#">Settings</a>
-        <a class="link" href="#">Theme</a>
+        <a class="link" href="#" onclick="openThemeSelector()">Theme</a>
       </div>
     </div>
 
@@ -50,7 +46,7 @@
         <img src="resources/google_icon.png" id="google-icon" />
 
         <form action="https://www.google.com/search" method="get">
-          <input id="search-form" type="text" placeholder="Search Google or type a URL" name="q" />
+          <input id="search-form" type="text" placeholder="Search Google or type a URL" name="q" autocomplete="off" />
         </form>
       </div>
     </div>
@@ -59,7 +55,13 @@
 
     <div id="date">Sunday, Nov. 2</div>
 
-  </simply-live>
+    <div id="theme-selector-wrapper">
+      <div id="theme-selector">
+        <p>a</p>
+      </div>
+    </div>
+
+  </live-simply>
 
   <script src="script.js"></script>
 </body>
