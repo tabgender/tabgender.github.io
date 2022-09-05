@@ -74,7 +74,7 @@ root = document.documentElement;
 function selectThisColorOption(option) {
   document.getElementsByClassName("selected-color-option")[0].classList.remove("selected-color-option");
   option.classList.add("selected-color-option");
-
+  
   switch (option.id) {
     case "red-color-option":
 
@@ -89,10 +89,19 @@ function selectThisColorOption(option) {
       root.style.setProperty("--light-color", "rgb(252, 237, 237)");
       break;
 
-    case "orange":
+    case "orange-color-option":
+      root.style.setProperty("--bg-color-top-left", "rgb(227, 183, 131)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(255, 140, 0)");
 
+      root.style.setProperty("--dark-color-0", "rgb(212, 121, 10)");
+      root.style.setProperty("--dark-color-1", "rgb(255, 187, 103)");
+      root.style.setProperty("--dark-color-2", "rgb(255, 157, 37)");
+      root.style.setProperty("--dark-color-3", "rgb(255, 191, 112)");
+
+      root.style.setProperty("--light-color", "rgb(252, 237, 237)");
+      option
       break;
-
+     
     case "yellow":
 
       break;
