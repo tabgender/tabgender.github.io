@@ -77,7 +77,6 @@ function selectThisColorOption(option) {
 
   switch (option.id) {
     case "red-color-option":
-
       root.style.setProperty("--bg-color-top-left", "rgb(226, 131, 131)");
       root.style.setProperty("--bg-color-bottom-right", "rgb(151, 15, 15)");
 
@@ -87,7 +86,7 @@ function selectThisColorOption(option) {
       root.style.setProperty("--dark-color-3", "rgb(248, 177, 177)");
 
       root.style.setProperty("--light-color", "rgb(252, 237, 237)");
-     
+
       break;
 
     case "orange-color-option":
@@ -103,21 +102,45 @@ function selectThisColorOption(option) {
 
       option
       break;
-     
+
     case "yellow":
 
       break;
 
-    case "green":
+    case "green-color-option":
+      root.style.setProperty("--bg-color-top-left", "rgb(163, 250, 146)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(10, 100, 2)");
 
+      root.style.setProperty("--dark-color-0", "rgb(12, 87, 16)");
+      root.style.setProperty("--dark-color-1", "rgb(77, 214, 64)");
+      root.style.setProperty("--dark-color-2", "rgb(87, 128, 89)");
+      root.style.setProperty("--dark-color-3", "rgb(177, 184, 248)");
+
+      root.style.setProperty("--light-color", "rgb(239, 255, 239)");
       break;
 
-    case "blue":
+    case "blue-color-option":
+      root.style.setProperty("--bg-color-top-left", "rgb(146, 162, 250)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(0, 0, 136)");
 
+      root.style.setProperty("--dark-color-0", "rgb(5, 3, 109)");
+      root.style.setProperty("--dark-color-1", "rgb(108, 106, 245)");
+      root.style.setProperty("--dark-color-2", "rgb(75, 64, 230)");
+      root.style.setProperty("--dark-color-3", "rgb(177, 184, 248)");
+
+      root.style.setProperty("--light-color", "rgb(239, 249, 255)");
       break;
 
-    case "purple":
+    case "purple-color-option":
+      root.style.setProperty("--bg-color-top-left", "rgb(211, 179, 236)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(80, 0, 145)");
 
+      root.style.setProperty("--dark-color-0", "rgb(78, 9, 124)");
+      root.style.setProperty("--dark-color-1", "rgb(182, 74, 253)");
+      root.style.setProperty("--dark-color-2", "rgb(192, 149, 228)");
+      root.style.setProperty("--dark-color-3", "rgb(216, 177, 248)");
+
+      root.style.setProperty("--light-color", "rgb(252, 237, 242)");
       break;
   }
 
