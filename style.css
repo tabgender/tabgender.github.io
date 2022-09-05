@@ -34,6 +34,7 @@ input {
 	display: flex;
 	justify-content: center;
 	vertical-align: center;
+	align-items:center;
 }
 
 #search-bar {
@@ -57,7 +58,7 @@ input {
 	background: var(--light-color);
 
 	font-family: inter, serif;
-	font-size: 45px;
+	font-size: 2.5em;
 }
 
 ::placeholder {
@@ -82,7 +83,7 @@ input {
 	width: 100vw;
 	justify-content: center;
 
-	font-size: 90px;
+	font-size: 5.5em;
 	color: var(--light-color);
 }
 
@@ -94,7 +95,7 @@ input {
 
 	justify-content: center;
 
-	font-size: 45px;
+	font-size: 3.1em;
 	color: var(--light-color);
 }
 
@@ -106,7 +107,7 @@ input {
 
 	margin-right: 7px;
 
-	font-size: 40px;
+	font-size: 2.5em;
 	text-align: left;
 	color: var(--light-color);
 }
@@ -241,7 +242,7 @@ input {
 	border-radius:10px;
 
 	pointer-events: none;
-	font-size: 20px;
+	font-size: 2.5em;
 }
 
 #theme-selector-categories {
@@ -310,7 +311,7 @@ input {
 	margin-left: 10px;
 	margin-right: 10px;
 
-	border-radius: 10px;
+border:none;
 }
 
 #red-color-option {
