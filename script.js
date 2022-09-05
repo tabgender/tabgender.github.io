@@ -91,7 +91,7 @@ function selectThisColorOption(option) {
       break;
 
     case "orange-color-option":
-      root.style.setProperty("--bg-color-top-left", "rgb(227, 183, 131)");
+      root.style.setProperty("--bg-color-top-left", "rgb(235, 198, 154)");
       root.style.setProperty("--bg-color-bottom-right", "rgb(255, 140, 0)");
 
       root.style.setProperty("--dark-color-0", "rgb(212, 121, 10)");
@@ -99,12 +99,22 @@ function selectThisColorOption(option) {
       root.style.setProperty("--dark-color-2", "rgb(255, 157, 37)");
       root.style.setProperty("--dark-color-3", "rgb(255, 191, 112)");
 
-      root.style.setProperty("--light-color", "rgb(252, 237, 237)");
-
+      root.style.setProperty("--light-color", "rgb(255, 251, 246)");
+      
+      
       window.localStorage.setItem("color-option", "orange-color-option");
       break;
 
-    case "yellow":
+    case "yellow-color-option":
+      root.style.setProperty("--bg-color-top-left", "rgb(255, 255, 144)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(168, 168, 21)");
+
+      root.style.setProperty("--dark-color-0", "rgb(129, 129, 12)");
+      root.style.setProperty("--dark-color-1", "rgb(236, 236, 120)");
+      root.style.setProperty("--dark-color-2", "rgb(199, 199, 42)");
+      root.style.setProperty("--dark-color-3", "rgb(221, 221, 135)");
+
+      root.style.setProperty("--light-color", "rgb(255, 255, 255)");
 
 
       window.localStorage.setItem("color-option", "yellow-color-option");
