@@ -87,6 +87,7 @@ function selectThisColorOption(option) {
 
       root.style.setProperty("--light-color", "rgb(252, 237, 237)");
 
+      window.localStorage.setItem("color-option", "red-color-option");
       break;
 
     case "orange-color-option":
@@ -100,11 +101,13 @@ function selectThisColorOption(option) {
 
       root.style.setProperty("--light-color", "rgb(252, 237, 237)");
 
-      option
+      window.localStorage.setItem("color-option", "orange-color-option");
       break;
 
     case "yellow":
 
+
+      window.localStorage.setItem("color-option", "yellow-color-option");
       break;
 
     case "green-color-option":
@@ -114,9 +117,11 @@ function selectThisColorOption(option) {
       root.style.setProperty("--dark-color-0", "rgb(12, 87, 16)");
       root.style.setProperty("--dark-color-1", "rgb(77, 214, 64)");
       root.style.setProperty("--dark-color-2", "rgb(87, 128, 89)");
-      root.style.setProperty("--dark-color-3", "rgb(177, 184, 248)");
+      root.style.setProperty("--dark-color-3", "rgb(177, 220, 184)");
 
       root.style.setProperty("--light-color", "rgb(239, 255, 239)");
+
+      window.localStorage.setItem("color-option", "green-color-option");
       break;
 
     case "blue-color-option":
@@ -129,6 +134,9 @@ function selectThisColorOption(option) {
       root.style.setProperty("--dark-color-3", "rgb(177, 184, 248)");
 
       root.style.setProperty("--light-color", "rgb(239, 249, 255)");
+
+      window.localStorage.setItem("color-option", "blue-color-option");
+      console.log(window.localStorage.getItem("color-option"));
       break;
 
     case "purple-color-option":
@@ -141,6 +149,8 @@ function selectThisColorOption(option) {
       root.style.setProperty("--dark-color-3", "rgb(216, 177, 248)");
 
       root.style.setProperty("--light-color", "rgb(252, 237, 242)");
+
+      window.localStorage.setItem("color-option", "purple-color-option");
       break;
   }
 
@@ -159,3 +169,11 @@ window.onclick = function (event) {
     closeThemeSelector();
   }
 }
+
+//initialize storage
+if(window.localStorage.getItem("color-option") === null) {
+  window.localStorage.setItem("color-option", "purple-color-option");
+}
+
+document.getElementById(window.localStorage.getItem("color-option")).classList.add("selected-color-option");
+selectThisColorOption(document.getElementById(window.localStorage.getItem("color-option")));
