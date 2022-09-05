@@ -21,6 +21,8 @@ body {
 
 	width: 100vw;
 	height: 100vh;
+
+	background-repeat: none;
 }
 
 input {
@@ -32,28 +34,30 @@ input {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-	vertical-align: center;
 }
 
 #search-bar {
-	width: 845px;
+	width: 54vw;
 	height: 84px;
 
-	display: flex;
-	justify-content: center;
+	display: grid;
+
+	grid-template-columns: auto auto;
 
 	border-radius: 200px;
 	background: var(--light-color);
+
+	overflow:hidden;
 }
 
 #search-form {
-	margin-left: 10px;
-
-	width: 720px;
+	width: 48vw;
 	height: 82px;
 
+	padding-right: 15px;
+	
 	border: none;
-	background: var(--light-color);
+	background: none;
 
 	font-family: inter, serif;
 	font-size: 45px;
@@ -63,10 +67,15 @@ input {
 	color: var(--dark-color-3);
 	font-family: inter, serif;
 	font-weight: 300;
+
+	overflow:hidden;
 }
 
 #google-icon {
-	margin-left: -30px;
+
+	justify-self:center;
+
+	padding-left: 15px;
 	margin-top: 28px;
 
 	width: 30px;
