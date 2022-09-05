@@ -8,6 +8,17 @@
 	--dark-color-3: rgb(216, 177, 248);
 
 	--light-color: rgba(252, 237, 242, 1);
+	
+	/* --bg-color-top-left: rgb(226, 131, 131);
+	--bg-color-bottom-right: rgb(151, 15, 15);
+
+	--dark-color-0: rgb(109, 3, 3);
+	--dark-color-1: rgb(245, 90, 90);
+	--dark-color-2: rgb(207, 83, 83);
+	--dark-color-3: rgb(248, 177, 177);
+
+	--light-color: rgb(252, 237, 237); */
+
 }
 
 body {
@@ -103,7 +114,7 @@ input {
 
 	float: right;
 
-	margin-right: 5px;
+	margin-right: 7px;
 
 	font-size: 40px;
 	text-align: left;
@@ -296,11 +307,20 @@ input {
 	border-radius:20px;
 
 	display:flex;
+	flex-wrap: wrap;
+
+	justify-content:center;
+	align-items: center;
 }
 
 .color-option {
-	width: 5em;
-	height: 5em;
+	width: 6em;
+	height: 6em;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	border-radius: 10px;
 }
 
 #red-color-option {
@@ -320,4 +340,8 @@ input {
 }
 #purple-color-option {
 	background: purple;
+}
+
+.selected-color-option {
+	border: 5px solid black;
 }

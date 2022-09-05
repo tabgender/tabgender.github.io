@@ -9,7 +9,7 @@ function update(time, date) {
 
   if (d.getHours() > 12) {
     time.textContent = (d.getHours() - 12) + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " pm";
-  } else if(d.getHours() == 12) {
+  } else if (d.getHours() == 12) {
     time.textContent = 12 + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " pm";
   } else {
     time.textContent = d.getHours() + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + " am";
@@ -66,6 +66,50 @@ function closeThemeSelector() {
 function selectThisThemeCategory(category) {
   document.getElementById("selected-theme-category").removeAttribute("id");
   category.setAttribute("id", "selected-theme-category");
+}
+
+//choose what color to select
+root = document.documentElement;
+
+function selectThisColorOption(option) {
+  document.getElementsByClassName("selected-color-option")[0].classList.remove("selected-color-option");
+  option.classList.add("selected-color-option");
+
+  switch (option.id) {
+    case "red-color-option":
+
+      root.style.setProperty("--bg-color-top-left", "rgb(226, 131, 131)");
+      root.style.setProperty("--bg-color-bottom-right", "rgb(151, 15, 15)");
+
+      root.style.setProperty("--dark-color-0", "rgb(109, 3, 3)");
+      root.style.setProperty("--dark-color-1", "rgb(245, 90, 90)");
+      root.style.setProperty("--dark-color-2", "rgb(207, 83, 83)");
+      root.style.setProperty("--dark-color-3", "rgb(248, 177, 177)");
+
+      root.style.setProperty("--light-color", "rgb(252, 237, 237)");
+      break;
+
+    case "orange":
+
+      break;
+
+    case "yellow":
+
+      break;
+
+    case "green":
+
+      break;
+
+    case "blue":
+
+      break;
+
+    case "purple":
+
+      break;
+  }
+
 }
 
 //mouse handling
