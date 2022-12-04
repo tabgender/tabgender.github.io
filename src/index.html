@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="../dist/output.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
     <title>New tab</title>
 
 </head>
@@ -27,35 +31,35 @@
 
     -->
     <div
-        class="flex h-screen w-screen flex-col items-center bg-gradient-to-br from-[#d3b3ec] to-[#500091] text-[#FCEDF2] font-poppins">
+        class="flex h-screen w-screen flex-col items-center bg-gradient-to-br from-[#d3b3ec] to-[#500091] text-[#FCEDF2] font-inter">
         <!-- top part -->
-        <div class="flex h-14 w-screen items-stretch justify-start gap-3 space-evenly">
+        <div class="flex h-20 w-screen items-stretch justify-start gap-3 space-evenly">
             <!-- logo -->
-            <div class="flex w-14 items-center justify-center bg-lime-500">G</div>
+            <div class="flex w-20 items-center justify-center bg-lime-500">G</div>
 
             <!-- spacer -->
             <div class="grow"></div>
 
             <!-- money -->
             <div class="flex items-center">
-                <h2 class="text-3xl">$123,456.78</h2>
+                <h2 class="text-4xl">$123,456.78</h2>
             </div>
 
             <!-- settings -->
-            <div class="flex w-4 items-center justify-center bg-red-500"><img src="../resources/options.svg"></div>
+            <div class="flex w-8 items-center justify-center bg-red-500 pr-3"><img src="../resources/options.svg"></div>
         </div>
 
         <!-- spacer -->
         <div class="grow-[1]"></div>
 
         <!-- time -->
-        <div class="text-7xl">
+        <div class="text-9xl">
             <h2 id="time">12:45</h2>
         </div>
 
         <!-- search bar -->
         <form id="search-bar"
-            class="hover:bg-[#ffe6f9] flex h-20 w-2/3 rounded-full justify-left items-center bg-[#FCEDF2] text-5xl m-2 overflow-hidden"
+            class="hover:bg-[#ffe6f9] flex h-20 w-7/12 rounded-full justify-left items-center bg-[#FCEDF2] text-5xl m-5 overflow-hidden"
             action="https://www.google.com/search" method="get">
 
             <!-- logo -->
@@ -64,13 +68,13 @@
 
             <!-- input -->
             <input
-                class="bg-transparent flex grow shrink min-w-0 h-full mr-2 focus:outline-none text-[#c095e4] placeholder:text-[#D8B1F8]"
+                class="bg-transparent flex grow shrink min-w-0 h-full mr-2 focus:outline-none text-[#c095e4] placeholder:text-[#D8B1F8] placeholder:font-light"
                 type="text" placeholder="Search Google or type a URL" name="q" autocomplete="off" />
 
         </form>
 
         <!-- date -->
-        <div class="text-3xl">
+        <div class="text-5xl">
             <h2 id="date">Saturday, Nov. 2</h2>
         </div>
 
