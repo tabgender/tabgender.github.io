@@ -13,46 +13,59 @@
 
 <body>
     
-    <div class="bg-fuchsia-300"> <!-- content wrapper -->
-        <main>
-
-            <!-- logo -->
-            <div>
-                <img src="../resources/google_icon.png">
-            </div>
-
-            <!-- settings -->
-            <div>
-                <img src = "../resources/options-gray.png" style="height:10px; width:10px;">
-            </div>
-
-            <!-- money -->
-            <div>
-                <h2 class="text-gray-600">$123,456.78</h2>
-            </div>
-
-            <!-- time -->
-            <div>
-                <h2 id="time">12:45</h2>
-            </div>
-
-            <!-- search bar -->
-            <div id="search-wrapper">
-                <div id="search-bar">
-          
-                  <img src="resources/google_icon.png" id="google-icon" />
-          
-                  <form action="https://www.google.com/search" method="get">
-                    <input id="search-form" type="text" placeholder="Search Google or type a URL" name="q" autocomplete="off" />
-                  </form>
-                </div>
-            </div>
-
-            <!-- date -->
-            <div>
-                <h2 id="date">Saturday, Nov. 2</h2>
-            </div>
-
+     <!-- content wrapper -->
+     <div class="flex h-screen w-screen flex-col items-center bg-fuchsia-300">
+        <!-- top part -->
+        <div class="flex h-14 w-screen items-stretch justify-start gap-3 space-evenly">
+          <!-- logo -->
+          <div class="flex w-14 items-center justify-center bg-lime-500">G</div>
+  
+          <!-- spacer -->
+          <div class="grow"></div>
+  
+          <!-- money -->
+          <div class="flex items-center">
+            <h2 class="text-3xl font-poppins">$123,456.78</h2>
+          </div>
+  
+          <!-- settings -->
+          <div class="flex w-4 items-center justify-center bg-red-500">S</div>
+        </div>
+  
+        <!-- spacer -->
+        <div class="grow-[1]"></div>
+  
+        <!-- time -->
+        <div class="text-8xl font-poppins">
+          <h2 id="time">12:45</h2>
+        </div>
+  
+        <!-- search bar -->
+        <div id="search-bar" class="hover:bg-slate-50 flex h-10 w-1/2 rounded-full justify-left items-center bg-white">
+  
+          <!-- spacer -->
+          <div class="h-3 w-3"></div>
+  
+          <!-- logo -->
+          <div class="h-3 w-3 bg-lime-500"></div>
+  
+          <form class = "flex shrink w-full min-w-0" action="https://www.google.com/search" method="get">
+            <input class = "bg-transparent flex grow shrink min-w-0 focus:outline-none" id="search-form" type="text" placeholder="Search Google or type a URL" name="q" autocomplete="off" />
+          </form>
+  
+          <!-- spacer -->
+          <div class="h-3 w-5"></div>
+  
+        </div>
+  
+        <!-- date -->
+        <div class="text-3xl">
+          <h2 id="date" class="font-poppins">Saturday, Nov. 2</h2>
+        </div>
+  
+        <!-- spacer -->
+        <div class="grow-[2]"></div>
+      </div>
         </main>
     </div>
 
