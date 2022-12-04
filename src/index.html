@@ -26,7 +26,8 @@
         ]
 
     -->
-    <div class="flex h-screen w-screen flex-col items-center bg-gradient-to-br from-[#d3b3ec] to-[#500091] text-[#FCEDF2] font-poppins">
+    <div
+        class="flex h-screen w-screen flex-col items-center bg-gradient-to-br from-[#d3b3ec] to-[#500091] text-[#FCEDF2] font-poppins">
         <!-- top part -->
         <div class="flex h-14 w-screen items-stretch justify-start gap-3 space-evenly">
             <!-- logo -->
@@ -53,14 +54,17 @@
         </div>
 
         <!-- search bar -->
-        <form id="search-bar" class="hover:bg-[#ffe6f9] flex h-20 w-1/2 rounded-full justify-left items-center bg-[#FCEDF2] text-5xl m-2"
+        <form id="search-bar"
+            class="hover:bg-[#ffe6f9] flex h-20 w-2/3 rounded-full justify-left items-center bg-[#FCEDF2] text-5xl m-2 overflow-hidden"
             action="https://www.google.com/search" method="get">
 
             <!-- logo -->
             <div class="flex h-full mx-auto w-10 h-10 items-center ml-5"><img class="w-6 h-6"
                     src="../resources/google_icon.png"></div>
-                    
-            <input class="bg-transparent flex grow shrink min-w-0 focus:outline-none h-full text-[#c095e4] placeholder:text-[#D8B1F8]" id="search-form"
+
+            <!-- input -->
+            <input
+                class="bg-transparent flex grow shrink min-w-0 h-full mr-2 focus:outline-none text-[#c095e4] placeholder:text-[#D8B1F8]"
                 type="text" placeholder="Search Google or type a URL" name="q" autocomplete="off" />
 
         </form>
