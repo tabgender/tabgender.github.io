@@ -517,6 +517,18 @@ video {
   visibility: hidden;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.float-right {
+  float: right;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -545,6 +557,14 @@ video {
   height: 1.5rem;
 }
 
+.h-\[100\] {
+  height: 100;
+}
+
+.h-\[34\] {
+  height: 34;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -571,6 +591,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-0 {
@@ -615,6 +639,10 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-hidden {
